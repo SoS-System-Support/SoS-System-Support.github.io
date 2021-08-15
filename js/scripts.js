@@ -7,10 +7,13 @@
 // Scripts
 // 
 
+import Bootstrap from 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.esm.min.js';
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.getElementById('mainNav');
+    
     if (mainNav) 
     {
         new bootstrap.ScrollSpy(document.body, {
@@ -23,12 +26,12 @@ window.addEventListener('DOMContentLoaded', event => {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const responsiveNavItems = Array.from(document.querySelectorAll('#navbarResponsive .nav-link'));
     
-    responsiveNavItems.map(responsiveNavItem => {
-        responsiveNavItem.addEventListener('click', () => {
+    for(const item of document.querySelectorAll('#navbarResponsive .nav-link'))
+    {
+        item.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
         });
-    });
-
+    }
 });
