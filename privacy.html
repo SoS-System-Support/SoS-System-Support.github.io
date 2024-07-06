@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!----This code is barely alive. for gods sake dont touch it---->
-
-
+    <!----This code is barely alive. for gods sake dont touch it---->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -22,20 +19,33 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-   .screen {
-    position: relative;
-    width: 250px; /* Adjust as needed */
-    height: 500px; /* Adjust as needed */
-    overflow: hidden;
-}
+        .screen {
+            position: relative;
+            width: 250px; /* Adjust as needed */
+            height: 500px; /* Adjust as needed */
+            overflow: hidden;
+        }
 
-.mockup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .mockup {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .privacy-policy-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .navbar-brand.center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body id="page-top">
@@ -43,7 +53,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <img src="https://i.ibb.co/R3kQyJP/static-1-removebg-1.png" alt="..." style="height: 3rem" />
-            <a class="navbar-brand fw-bold" href="https://youtu.be/dQw4w9WgXcQ">SoS Redemption Bot</a>
+            <a class="navbar-brand fw-bold center" href="https://youtu.be/dQw4w9WgXcQ">SoS Redemption Bot</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
@@ -54,7 +64,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features"><p style="color:blue">FAQ</p></a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="https://discord.com/oauth2/authorize?client_id=879438681096740905"><p style="color:blue">Invite</p></a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="https://sos-system-support.github.io/SoSRB.io/privacy.html"><p style="color:blue">Privacy Policy</p></a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="https://sos-system-support.github.io/SoSRB.io/tos.html"><p style="color:blue">Privacy Policy</p></a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="https://sos-system-support.github.io/SoSRB.io/tos.html"><p style="color:blue">Terms of Service</p></a></li>
                 </ul>
             </div>
         </div>
@@ -72,95 +82,115 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-     <div class="masthead-device-mockup">
-    <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                <stop class="gradient-start-color" offset="0%"></stop>
-                <stop class="gradient-end-color" offset="100%"></stop>
-            </linearGradient>
-        </defs>
-        <circle cx="50" cy="50" r="50"></circle>
-    </svg>
-    <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
-    </svg>
-    <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="50"></circle>
-    </svg>
-    <div class="device-wrapper">
-        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-            <div class="screen bg-black">
-                <!-- Video Container -->
-                <div class="video-container">
-                    <video id="mockup-video" muted autoplay loop style="width: 100%; height: auto; position: absolute; bottom: 0;">
-                        <source src="assets/img/ScreenRecording_07-04-2024 22-08-30_1.mov" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="masthead-device-mockup">
+                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                        </svg>
+                        <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                <div class="screen bg-black">
+                                    <!-- Video Container -->
+                                    <div class="video-container">
+                                        <video id="mockup-video" muted autoplay loop style="width: 100%; height: auto; position: absolute; bottom: 0;">
+                                            <source src="assets/img/ScreenRecording_07-04-2024 22-08-30_1.mov" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <!-- Overlay to prevent clicking -->
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Overlay to prevent clicking -->
-                <div class="overlay"></div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-<h1>Privacy Policy</h1>
-<p>Last updated: July 06, 2024</p>
-<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
-<h2>Interpretation and Definitions</h2>
-<h3>Interpretation</h3>
-<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-<h3>Definitions</h3>
-<p>For the purposes of this Privacy Policy:</p>
-<ul>
-<li>
-<p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
-</li>
-<li>
-<p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
-</li>
-<li>
-<p><strong>Application</strong> refers to SoS Redemption Bot, the software program provided by the Company.</p>
-</li>
-<li>
-<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to SoS Redemption Bot.</p>
-</li>
-<li>
-<p><strong>Country</strong> refers to: Nordrhein-Westfalen,  Germany</p>
-</li>
-<li>
-<p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
-</li>
-<li>
-<p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
-</li>
-<li>
-<p><strong>Service</strong> refers to the Application.</p>
-</li>
-<li>
-<p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
-</li>
-<li>
-<p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
-</li>
-<li>
-<p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
-</li>
-</ul>
-<h2>Collecting and Using Your Personal Data</h2>
-<h3>Types of Data Collected</h3>
-<h4>Personal Data</h4>
-<p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
-<ul>
-<li>Usage Data</li>
-</ul>
-<h4>Usage Data</h4>
-<p>Usage Data is collected automatically when using the Service.</p>
+    </header>
+    <!-- Privacy Policy -->
+    <div class="container privacy-policy-container">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: July 06, 2024</p>
+        <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+        <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+        <h2>Interpretation and Definitions</h2>
+        <h3>Interpretation</h3>
+        <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+        <h3>Definitions</h3>
+        <p>For the purposes of this Privacy Policy:</p>
+        <ul>
+            <li>
+                <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
+            </li>
+            <li>
+                <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+            </li>
+            <li>
+                <p><strong>Application</strong> means the software program provided by the Company downloaded by You on any electronic device, named SoS Redemption Bot</p>
+            </li>
+            <li>
+                <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to SoS Redemption Bot.</p>
+            </li>
+            <li>
+                <p><strong>Country</strong> refers to: Florida,  United States</p>
+            </li>
+            <li>
+                <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+            </li>
+            <li>
+                <p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+            </li>
+            <li>
+                <p><strong>Service</strong> refers to the Application or the Website or both.</p>
+            </li>
+            <li>
+                <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+            </li>
+            <li>
+                <p><strong>Third-party Social Media Service</strong> refers to any website or any social network website through which a User can log in or create an account to use the Service.</p>
+            </li>
+            <li>
+                <p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+            </li>
+            <li>
+                <p><strong>Website</strong> refers to SoS Redemption Bot, accessible from <a href="https://sos-system-support.github.io/SoSRB.io/privacy.html" rel="external nofollow noopener" target="_blank">https://sos-system-support.github.io/SoSRB.io/privacy.html</a></p>
+            </li>
+            <li>
+                <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+            </li>
+        </ul>
+        <h2>Collecting and Using Your Personal Data</h2>
+        <h3>Types of Data Collected</h3>
+        <h4>Personal Data</h4>
+        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+        <ul>
+            <li>
+                <p>Email address</p>
+            </li>
+            <li>
+                <p>First name and last name</p>
+            </li>
+            <li>
+                <p>Phone number</p>
+            </li>
+            <li>
+                <p>Usage Data</p>
+            </li>
+        </ul>
+        <h4>Usage Data</h4>
+        <p>Usage Data is collected automatically when using the Service.</p>
 <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
 <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
 <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
