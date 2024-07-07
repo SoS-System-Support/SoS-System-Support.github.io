@@ -124,74 +124,64 @@
         </div>
     </section>
     <!-- App features section-->
-    <section id="features">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                    <div class="container-fluid px-5">
-                        <div class="row gx-5">
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/register name id</h3>
-                                    <p class="text-muted mb-0">Used to register your GameID to the Database.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/redeem name code</h3>
-                                    <p class="text-muted mb-0">When your ID is registered you use this command to redeem your rewards.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-5 mb-md-0">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/check name</h3>
-                                    <p class="text-muted mb-0">Used to check if your ID has been registered in the Database.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/massredeem code</h3>
-                                    <p class="text-muted mb-0">Wanna do all users a favour? Use this command to redeem any code for all registered users at once.</p>
-                                <div class="text-center">
-                                    <h3 class="font-alt">/start name</h3>
-                                    <p class="text-muted mb-0">When triggered, the bot will try out random code combinations following the officially used code pattern.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/stop name</h3>
-                                    <p class="text-muted mb-0">When triggered, the bot stop trying out random code combinations following the officially used code pattern.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-5 mb-md-0">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/invite</h3>
-                                    <p class="text-muted mb-0">Used to post the invitation for the bot. To share the bot even when not in the testing server.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <h3 class="font-alt">/helps</h3>
-                                    <p class="text-muted mb-0">Shows all availble commands with an interactive menu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 order-lg-0">
-            </div>
-        </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/helps.png" alt="Helps">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/register.png" alt="Register">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/check.png" alt="Check">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/redeem.png" alt="Redeem">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/mass.png" alt="Mass">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/start.png" alt="Start">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/stop.png" alt="Stop">
+        <img src="https://sos-system-support.github.io/SoSRB.io/assets/img/invite.png" alt="Invite">
+    </div>
+</body>
+
     </section>
 
     <!-- Basic features section-->
